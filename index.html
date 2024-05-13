@@ -50,9 +50,11 @@
         </div>
 
         <div class="flex">
-            <a href="./font-face.json" download="default-font-face">default font face</a>
           <input type="file" id="file-input" accept=".json" />
-          <div><button onclick="download()">download</button></div>
+          <div>
+            <button onclick="download()">download</button>
+            <a href="./font-face.json" download="default-font-face">default font face</a>
+          </div>
         </div>
       </div>
 
@@ -81,7 +83,7 @@
 
     <script>
       let dictMap = JSON.parse(localStorage.getItem('dictMap') || '[]') || []
-      const socket = new WebSocket(localStorage.getItem('wsUrl') || 'ws://127.0.0.1:8001')
+      const socket = new WebSocket(localStorage.getItem('useMyWebSocket') || 'ws://127.0.0.1:8001')
       const txt = document.getElementById('test')
       const word = document.getElementById('word')
       const params = new URLSearchParams(location.search)
