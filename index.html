@@ -83,7 +83,7 @@
 
     <script>
       let dictMap = JSON.parse(localStorage.getItem('dictMap') || '[]') || []
-      const socket = new WebSocket(localStorage.getItem('useMyWebSocket') || 'ws://127.0.0.1:8001')
+      const socket = new WebSocket(localStorage.getItem('useMyWebSocket') || 'wss://127.0.0.1:8001')
       const txt = document.getElementById('test')
       const word = document.getElementById('word')
       const params = new URLSearchParams(location.search)
