@@ -20,7 +20,7 @@
         /* background-image: linear-gradient(90deg, #ffffff 10%, rgba(0, 0, 0, 0) 10%), linear-gradient(#ffffff 10%, rgba(0, 0, 0, 0) 10%); */
         /* background-size: 20px 20px; */
         background-image: linear-gradient(90deg, #ffffff 2%, rgba(0, 0, 0, 0) 2%), linear-gradient(#ffffff 2%, rgba(0, 0, 0, 0) 2%);
-        background-size: 200px 200px;
+        background-size: 30px 30px;
       }
       #cover {
         position: fixed;
@@ -112,7 +112,7 @@
           .map((item, index) =>
             item?.value.map((child) => {
               const { type, point } = child
-              return { type, point: [point[0] + (index % (9 * dpr)) * 200, point[1] + Math.floor(index / (9 * dpr)) * 200] }
+              return { type, point: [point[0] + (index % (16 * dpr)) * 100, point[1] + Math.floor(index / (16 * dpr)) * 180] }
             })
           )
           .filter((item) => item)
