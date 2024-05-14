@@ -1,0 +1,1 @@
+body{background-color:#faebd7}#canvas{background-color:#faebd7;background-image:linear-gradient(90deg,#fff 2%,rgba(0,0,0,0) 2%),linear-gradient(#fff 2%,rgba(0,0,0,0) 2%);background-size:30px 30px}#cover{position:fixed;left:0;right:0;top:0;bottom:0;background-color:rgba(0,0,0,.1);display:none;z-index:999}#msgContent{width:500px}.flex{display:flex;padding:8px}
